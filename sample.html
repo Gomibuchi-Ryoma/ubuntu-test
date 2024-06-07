@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>機能追加HTML例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>機能追加HTML例</h1>
+    </header>
+    <main>
+        <h2>連絡先フォーム</h2>
+        <form action="/submit" method="post">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="送信">
+        </form>
+    </main>
+    <main>
+        <h2>サンプルテーブル</h2>
+        <table>
+            <tr>
+                <th>名前</th>
+                <th>年齢</th>
+                <th>職業</th>
+            </tr>
+            <tr>
+                <td>山田 太郎</td>
+                <td>30</td>
+                <td>エンジニア</td>
+            </tr>
+            <tr>
+                <td>鈴木 花子</td>
+                <td>25</td>
+                <td>デザイナー</td>
+            </tr>
+            <tr>
+                <td>佐藤 一郎</td>
+                <td>35</td>
+                <td>マネージャー</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 機能追加HTML例</p>
+    </footer>
+</body>
+</html>
+
